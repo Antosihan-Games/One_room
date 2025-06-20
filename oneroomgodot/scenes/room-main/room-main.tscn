@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwqvlgk5aocxl"]
+
+[ext_resource type="PackedScene" uid="uid://oc4ahkjrnqob" path="res://scenes/room-main/assets/concept.glb" id="1_0fgyk"]
+[ext_resource type="Script" uid="uid://dy8ooxj2mwsld" path="res://scenes/room-main/room-main.gd" id="1_58x5h"]
+
+[sub_resource type="Environment" id="Environment_58x5h"]
+background_mode = 1
+background_color = Color(0.0995689, 0.0995689, 0.0995689, 1)
+
+[node name="Room" type="Node3D"]
+script = ExtResource("1_58x5h")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.630662, -0.530833, 0.566111, 0, 0.72947, 0.684013, -0.776057, -0.431381, 0.460049, 1.8111, 3.32343, 1.5695)
+projection = 1
+size = 5.902
+
+[node name="concept" parent="." instance=ExtResource("1_0fgyk")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_58x5h")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.229676, -0.714508, 0.660854, -0.0227315, 0.674882, 0.737575, -0.973002, -0.184425, 0.138762, 3.79994, 2.03386, 4.3634)
