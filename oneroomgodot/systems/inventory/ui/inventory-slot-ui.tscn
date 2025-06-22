@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1abcpe7h2plh"]
+
+[ext_resource type="Texture2D" uid="uid://cg41gk5k05aic" path="res://systems/inventory/ui/invslot_temp.png" id="1_4kdir"]
+[ext_resource type="Script" uid="uid://bxip41ovtpysy" path="res://systems/inventory/ui/inventory_slot_ui.gd" id="2_48hcu"]
+[ext_resource type="Texture2D" uid="uid://dgesso52qbl1s" path="res://systems/inventory/ui/invslot_selected_temp.png" id="3_og2vf"]
+[ext_resource type="Texture2D" uid="uid://10546c20hmjf" path="res://icon.svg" id="3_r4aw4"]
+
+[node name="InventorySlot" type="TextureButton"]
+custom_minimum_size = Vector2(96, 96)
+offset_right = 96.0
+offset_bottom = 96.0
+texture_normal = ExtResource("1_4kdir")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("2_48hcu")
+
+[node name="SelectionBorder" type="TextureRect" parent="."]
+visible = false
+clip_contents = true
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.0
+offset_top = -42.0
+offset_right = 42.0
+offset_bottom = 42.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_og2vf")
+expand_mode = 2
+
+[node name="ItemTexture" type="TextureRect" parent="."]
+clip_contents = true
+custom_minimum_size = Vector2(84, 84)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_r4aw4")
+expand_mode = 2

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://c3kj6vkdrd5xm"]
+
+[ext_resource type="Script" uid="uid://7th8lyw6opt2" path="res://systems/inventory/inventory-item.gd" id="1_kcoyx"]
+[ext_resource type="Texture2D" uid="uid://dduonpfhy1jda" path="res://systems/inventory/items/leberwurst.png" id="2_7jnit"]
+
+[resource]
+script = ExtResource("1_kcoyx")
+name = "Leberwurst"
+description = "Eine eklige streichbare Wurst"
+texture = ExtResource("2_7jnit")
+metadata/_custom_type_script = "uid://7th8lyw6opt2"

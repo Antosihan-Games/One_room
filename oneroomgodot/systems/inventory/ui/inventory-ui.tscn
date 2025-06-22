@@ -1,0 +1,160 @@
+[gd_scene load_steps=4 format=3 uid="uid://bffkr4p47an6i"]
+
+[ext_resource type="PackedScene" uid="uid://b1abcpe7h2plh" path="res://systems/inventory/ui/inventory-slot-ui.tscn" id="1_2vixj"]
+[ext_resource type="Script" uid="uid://bqjcv13usdki8" path="res://systems/inventory/ui/inventory_ui.gd" id="1_15tyq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_15tyq"]
+bg_color = Color(0.191829, 0.191829, 0.191829, 1)
+expand_margin_left = 24.0
+expand_margin_top = 24.0
+expand_margin_right = 24.0
+expand_margin_bottom = 24.0
+
+[node name="Inventory-ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_15tyq")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -383.5
+offset_top = -236.5
+offset_right = 640.5
+offset_bottom = 236.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_15tyq")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Label" type="Label" parent="Panel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Inventar"
+
+[node name="Slots" type="GridContainer" parent="Panel/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 7
+
+[node name="InventorySlot" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot2" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot3" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot4" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot5" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot6" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot7" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot8" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot9" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot10" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot11" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot12" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot13" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot14" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot15" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot16" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot17" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot18" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot19" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot20" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot21" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot22" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot23" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot24" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot25" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot26" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot27" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="InventorySlot28" parent="Panel/HBoxContainer/VBoxContainer/Slots" instance=ExtResource("1_2vixj")]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Panel/HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="LabelName" type="Label" parent="Panel/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+
+[node name="LabelDescription" type="Label" parent="Panel/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+autowrap_mode = 2
